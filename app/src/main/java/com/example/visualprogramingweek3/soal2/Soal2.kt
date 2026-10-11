@@ -41,11 +41,9 @@ import kotlin.math.roundToInt
 fun Soal2View(modifier: Modifier = Modifier) {
     val interactionSource = remember { MutableInteractionSource() }
     val isPressed by interactionSource.collectIsPressedAsState()
-
     var coinCount by remember { mutableStateOf(0) }
     var coinsPerTap by remember { mutableStateOf(1) }
     var upgradeCost by remember { mutableStateOf(10) }
-
     val nextCoinsPerTap = (coinsPerTap * 1.5).roundToInt()
     val canUpgrade = coinCount >= upgradeCost
     val remainingCoins = maxOf(0, upgradeCost - coinCount)

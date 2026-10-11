@@ -39,7 +39,6 @@ fun Soal4Preview() {
 fun Soal4View(modifier: Modifier = Modifier) {
     val n = 5
     val target = (n / 2) + 1
-
     var state by rememberSaveable { mutableStateOf(State.INITIAL) }
     var skor by rememberSaveable { mutableIntStateOf(0) }
     var skorCpu by rememberSaveable { mutableIntStateOf(0) }
