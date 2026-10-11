@@ -9,6 +9,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Coffee
 import androidx.compose.material3.*
+import androidx.compose.material3.CardDefaults.cardColors
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -69,7 +70,7 @@ fun Soal1Bonus() {
 
         Card(
             shape = RoundedCornerShape(16.dp),
-            colors = CardDefaults.cardColors(containerColor = Krem),
+            colors = cardColors(Krem),
             border = BorderStroke(1.dp, Peach)
         ) {
             Column(
@@ -125,7 +126,7 @@ fun Soal1Bonus() {
 
         Card(
             shape = RoundedCornerShape(12.dp),
-            colors = CardDefaults.cardColors(containerColor = Krem),
+            colors = cardColors(Krem),
             border = BorderStroke(1.dp, Peach)
         ) {
             Row(
